@@ -1,0 +1,2 @@
+SELECT * FROM wp22_postmeta pm LEFT JOIN wp22_posts wp ON wp.ID = pm.post_id WHERE wp.ID IS NULL;
+DELETE pm FROM wp22_postmeta pm LEFT JOIN wp22_posts wp ON wp.ID = pm.post_id WHERE wp.ID IS NULL;
